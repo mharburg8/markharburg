@@ -382,7 +382,7 @@
         .marquee-track {
             display: flex;
             gap: 80px;
-            animation: marquee 40s linear infinite;
+            animation: marquee 55s linear infinite;
         }
 
         @keyframes marquee {
@@ -489,6 +489,17 @@
             text-transform: uppercase;
             letter-spacing: 1.5px;
             font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .badge:hover {
+            background: var(--forest-light);
+            transform: translateY(-2px);
+        }
+
+        a.badge:hover {
+            background: var(--gold);
+            color: var(--forest-dark);
         }
 
         .badge.gold {
@@ -1150,8 +1161,8 @@
             <div class="hero-content">
                 <div class="hero-text">
                     <div class="hero-label">Solutions Architect & Sales Engineer</div>
-                    <h1>The engineer who can <em>lead the room</em>, and the architect who ensures the foundation never cracks</h1>
-                    <p class="hero-description">Award-winning solutions architect bridging systematic technical architecture with charismatic market influence. TEDxDetroit speaker. FDA-cleared device founder. 115% average quota attainment.</p>
+                    <h1>I help technical and business teams align on <em>scalable architectures</em> by turning ambiguity into clear designs, without things breaking once they hit production.</h1>
+                    <p class="hero-description">Award-winning solutions architect bridging systematic technical architecture with charismatic market influence. FDA-cleared device founder. 115% average quota attainment.</p>
                     <div class="cta-group">
                         <a href="#contact" class="btn-primary">
                             Let's Connect
@@ -1196,6 +1207,9 @@
             <span class="skill-item">Enterprise Security</span>
             <span class="skill-item">Cloud Infrastructure</span>
             <span class="skill-item">Data Automation</span>
+            <span class="skill-item">LLMs</span>
+            <span class="skill-item">Prompt Engineering</span>
+            <span class="skill-item">Impact Demos</span>
             <span class="skill-item">Solution Architecture</span>
             <span class="skill-item">Azure Infrastructure</span>
             <span class="skill-item">API Integration</span>
@@ -1204,6 +1218,9 @@
             <span class="skill-item">Enterprise Security</span>
             <span class="skill-item">Cloud Infrastructure</span>
             <span class="skill-item">Data Automation</span>
+            <span class="skill-item">LLMs</span>
+            <span class="skill-item">Prompt Engineering</span>
+            <span class="skill-item">Impact Demos</span>
         </div>
     </section>
 
@@ -1220,16 +1237,18 @@
                         <img src="profile.jpg" alt="Mark Harburg">
                     </div>
                     <div class="about-badges">
-                        <span class="badge">TEDxDetroit Speaker</span>
+                        <span class="badge">Medical Device Founder</span>
                         <span class="badge gold">115% Quota Avg</span>
-                        <span class="badge">FDA Device Founder</span>
+                        <span class="badge">Sandler Certified</span>
+                        <span class="badge">High Ticket Closing Certified</span>
+                        <a href="https://winningbydesign.com/" target="_blank" class="badge" style="text-decoration: none;">Winning by Design Certified</a>
                     </div>
                 </div>
                 <div class="about-right">
                     <h3>A <em>Grounded Explorer</em> in Sales Engineering</h3>
                     <div class="about-text">
                         <p>I am a high-impact Sales Engineer who bridges the gap between systematic technical architecture and charismatic market influence. My approach to work is guided by a deep understanding of my own tendencies, cognition, and motivations, allowing me to navigate complex sales cycles with a level of composure that is rarely seen in high-stakes environments.</p>
-                        <p>What started as a college class project at Grand Valley State University became SafetySit—an FDA-cleared medical device now helping physical therapists across the country. That experience taught me that real innovation isn't just about clever engineering; it's about listening to 250+ clinicians, understanding their daily struggles, and building something that genuinely improves their work.</p>
+                        <p>What started as a college class project at Grand Valley State University became SafetySit—a medical device I took from initial concept through engineering, manufacturing, and FDA clearance. That experience taught me that real innovation isn't just about clever engineering; it's about listening to 250+ clinicians, understanding their daily struggles, and building something that genuinely improves their work.</p>
                         <p>I am motivated by more than just meeting quotas; I am driven by a sense of duty and the pursuit of truth. Whether I am uncovering a $500M+ market opportunity or closing a record-breaking mid-market deal, I bring a unique blend of extraverted energy and introverted depth.</p>
                     </div>
                 </div>
@@ -1369,7 +1388,7 @@
                             <li>Translated clinician-sourced concept into FDA-cleared medical device from concept through production</li>
                             <li>Conducted 250+ customer discovery interviews to validate clinical workflows and refine value propositions</li>
                             <li>Collaborated with 5 hospital systems including Spectrum Health to evaluate implementation feasibility</li>
-                            <li>Secured $50K+ in early-stage funding through pitch competitions and grants; TEDxDetroit speaker</li>
+                            <li>Secured $50K+ in early-stage funding through pitch competitions and grants</li>
                         </ul>
                     </div>
                 </div>
@@ -1427,7 +1446,11 @@
                 </div>
                 <div class="highlight-card">
                     <h3>Technical Sales Leadership</h3>
-                    <p>Leading pre-sales teams through complex enterprise sales cycles with 115% average quota attainment, managing parallel opportunities while maintaining technical credibility.</p>
+                    <p>Leading pre-sales teams through complex enterprise sales cycles with 115% average quota attainment. Certified in Sandler Sales, Winning by Design, and High Ticket Closing methodologies, bringing structured frameworks to technical selling.</p>
+                </div>
+                <div class="highlight-card">
+                    <h3>Emotional Intelligence</h3>
+                    <p>Reading rooms and navigating complex interpersonal dynamics with calm composure. High EQ allows me to manage stakeholders, defuse tension, and guide conversations toward alignment—even in high-stakes environments where emotions run high.</p>
                 </div>
                 <div class="highlight-card">
                     <h3>Azure & Enterprise Integration</h3>
@@ -1439,11 +1462,7 @@
                 </div>
                 <div class="highlight-card">
                     <h3>Discovery & Requirements</h3>
-                    <p>Conducting 250+ stakeholder discovery interviews to uncover true needs, validate assumptions, and translate requirements into actionable solution designs built on genuine connection.</p>
-                </div>
-                <div class="highlight-card">
-                    <h3>Manufacturing Operations</h3>
-                    <p>Optimizing production workflows using Lean principles, coordinating equipment installation, and managing cross-functional operational teams across automotive and medical industries.</p>
+                    <p>Conducting 250+ stakeholder discovery interviews to uncover true needs and translate requirements into actionable solution designs. At M-Files, led technical discovery and verification processes—mapping business workflows, validating integration requirements, and ensuring solution fit before deployment to prevent costly misalignments.</p>
                 </div>
             </div>
         </div>
