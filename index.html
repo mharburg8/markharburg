@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mark Harburg | Solutions Architect & Consultant</title>
+    <title>Mark Harburg | Sales Engineer & Technical Consultant</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Source+Sans+3:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&display=swap" rel="stylesheet">
@@ -831,6 +831,166 @@
             line-height: 1.8;
         }
 
+        /* Projects Section */
+        .projects-section {
+            padding: 140px 0;
+            background: white;
+        }
+
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 40px;
+            margin-top: 80px;
+        }
+
+        .project-card {
+            background: var(--cream);
+            padding: 48px 36px;
+            transition: all 0.5s ease;
+            border: 1px solid var(--mint);
+            position: relative;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .project-card:hover {
+            border-color: var(--gold);
+            transform: translateY(-8px);
+            box-shadow: 0 20px 40px rgba(26, 58, 47, 0.1);
+        }
+
+        .project-card h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: 26px;
+            font-weight: 400;
+            margin-bottom: 12px;
+            color: var(--forest-dark);
+        }
+
+        .project-tag {
+            display: inline-block;
+            font-size: 10px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: var(--forest);
+            background: var(--mint);
+            padding: 6px 14px;
+            margin-bottom: 20px;
+            font-weight: 600;
+            align-self: flex-start;
+        }
+
+        .project-card p {
+            font-size: 15px;
+            color: var(--muted);
+            line-height: 1.8;
+            margin-bottom: 24px;
+            flex-grow: 1;
+        }
+
+        .project-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            color: var(--forest);
+            text-decoration: none;
+            font-size: 13px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: color 0.3s ease;
+        }
+
+        .project-link:hover {
+            color: var(--gold);
+        }
+
+        /* Hire Section */
+        .hire-section {
+            padding: 80px 0;
+            background: var(--forest);
+            color: var(--cream);
+        }
+
+        .hire-content {
+            text-align: center;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        .hire-content h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: 40px;
+            font-weight: 400;
+            margin-bottom: 24px;
+        }
+
+        .hire-content h3 em {
+            font-style: italic;
+            color: var(--gold);
+        }
+
+        .hire-content p {
+            font-size: 18px;
+            color: rgba(255,255,255,0.7);
+            margin-bottom: 16px;
+            line-height: 1.7;
+        }
+
+        .hire-rate {
+            font-family: 'Playfair Display', serif;
+            font-size: 52px;
+            color: var(--gold);
+            margin: 32px 0 8px;
+            line-height: 1;
+        }
+
+        .hire-rate-label {
+            font-size: 13px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: rgba(255,255,255,0.5);
+            margin-bottom: 32px;
+        }
+
+        .hire-options {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            margin-top: 32px;
+            flex-wrap: wrap;
+        }
+
+        .hire-option {
+            text-align: center;
+        }
+
+        .hire-option-title {
+            font-size: 11px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: var(--gold);
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+
+        .hire-option-desc {
+            font-size: 15px;
+            color: rgba(255,255,255,0.6);
+        }
+
+        .hire-note {
+            margin-top: 32px;
+            font-size: 15px;
+            color: rgba(255,255,255,0.5);
+            font-style: italic;
+        }
+
+        @media (max-width: 1024px) {
+            .projects-grid { grid-template-columns: 1fr; }
+        }
+
         /* Story Section */
         .story-section {
             padding: 140px 0;
@@ -1147,6 +1307,7 @@
             <a href="#profile">Profile</a>
             <a href="#experience">Experience</a>
             <a href="#expertise">Expertise</a>
+            <a href="#projects">Projects</a>
             <a href="#contact">Contact</a>
         </div>
     </nav>
@@ -1160,9 +1321,9 @@
         <div class="container">
             <div class="hero-content">
                 <div class="hero-text">
-                    <div class="hero-label">Solutions Architect & Sales Engineer</div>
-                    <h1>I help technical and business teams align on <em>scalable architectures</em> by turning ambiguity into clear designs, without things breaking once they hit production.</h1>
-                    <p class="hero-description">Award-winning solutions architect bridging systematic technical architecture with charismatic market influence. FDA-cleared device founder. 115% average quota attainment.</p>
+                    <div class="hero-label">Sales Engineer & Pre-Sales Leader</div>
+                    <h1>I turn complex technical products into <em>closed deals</em> — translating architecture into business value that accelerates buy-in.</h1>
+                    <p class="hero-description">Award-winning Sales Engineer with 10+ years closing enterprise SaaS deals, building automation systems, and leading pre-sales teams. FDA-cleared device founder. $800K+ in closed ARR. 115% average quota attainment.</p>
                     <div class="cta-group">
                         <a href="#contact" class="btn-primary">
                             Let's Connect
@@ -1175,6 +1336,10 @@
                     <div class="hero-card">
                         <div class="stat-grid">
                             <div class="stat">
+                                <span class="stat-number">$800K+</span>
+                                <span class="stat-label">Closed ARR</span>
+                            </div>
+                            <div class="stat">
                                 <span class="stat-number">115%</span>
                                 <span class="stat-label">Avg Quota Attainment</span>
                             </div>
@@ -1183,12 +1348,8 @@
                                 <span class="stat-label">Years Experience</span>
                             </div>
                             <div class="stat">
-                                <span class="stat-number">90<sup>th</sup></span>
-                                <span class="stat-label">Percentile Discipline</span>
-                            </div>
-                            <div class="stat">
-                                <span class="stat-number">4<sup>th</sup></span>
-                                <span class="stat-label">Percentile Stress</span>
+                                <span class="stat-number">30+</span>
+                                <span class="stat-label">Concurrent Opportunities</span>
                             </div>
                         </div>
                     </div>
@@ -1199,28 +1360,28 @@
 
     <section class="skills-section">
         <div class="marquee-track">
-            <span class="skill-item">Solution Architecture</span>
-            <span class="skill-item">Azure Infrastructure</span>
-            <span class="skill-item">API Integration</span>
-            <span class="skill-item">Technical Sales</span>
-            <span class="skill-item">Medical Devices</span>
-            <span class="skill-item">Enterprise Security</span>
+            <span class="skill-item">Sales Engineering</span>
+            <span class="skill-item">Technical Discovery</span>
+            <span class="skill-item">Proof-of-Concept Development</span>
+            <span class="skill-item">REST API Integration</span>
             <span class="skill-item">Cloud Infrastructure</span>
+            <span class="skill-item">AI Agents & Workflow</span>
+            <span class="skill-item">Enterprise SaaS</span>
+            <span class="skill-item">Pre-Sales Leadership</span>
+            <span class="skill-item">Azure / AWS / GCP</span>
             <span class="skill-item">Data Automation</span>
-            <span class="skill-item">LLMs</span>
-            <span class="skill-item">Prompt Engineering</span>
-            <span class="skill-item">Impact Demos</span>
-            <span class="skill-item">Solution Architecture</span>
-            <span class="skill-item">Azure Infrastructure</span>
-            <span class="skill-item">API Integration</span>
-            <span class="skill-item">Technical Sales</span>
             <span class="skill-item">Medical Devices</span>
-            <span class="skill-item">Enterprise Security</span>
+            <span class="skill-item">Sales Engineering</span>
+            <span class="skill-item">Technical Discovery</span>
+            <span class="skill-item">Proof-of-Concept Development</span>
+            <span class="skill-item">REST API Integration</span>
             <span class="skill-item">Cloud Infrastructure</span>
+            <span class="skill-item">AI Agents & Workflow</span>
+            <span class="skill-item">Enterprise SaaS</span>
+            <span class="skill-item">Pre-Sales Leadership</span>
+            <span class="skill-item">Azure / AWS / GCP</span>
             <span class="skill-item">Data Automation</span>
-            <span class="skill-item">LLMs</span>
-            <span class="skill-item">Prompt Engineering</span>
-            <span class="skill-item">Impact Demos</span>
+            <span class="skill-item">Medical Devices</span>
         </div>
     </section>
 
@@ -1238,18 +1399,17 @@
                     </div>
                     <div class="about-badges">
                         <span class="badge">Medical Device Founder</span>
-                        <span class="badge gold">115% Quota Avg</span>
+                        <span class="badge gold">$800K+ Closed ARR</span>
                         <span class="badge">Sandler Certified</span>
-                        <span class="badge">High Ticket Closing Certified</span>
                         <a href="https://winningbydesign.com/" target="_blank" class="badge" style="text-decoration: none;">Winning by Design Certified</a>
                     </div>
                 </div>
                 <div class="about-right">
-                    <h3>A <em>Grounded Explorer</em> in Sales Engineering</h3>
+                    <h3>The SE Who <em>Closes</em></h3>
                     <div class="about-text">
-                        <p>I am a high-impact Sales Engineer who bridges the gap between systematic technical architecture and charismatic market influence. My approach to work is guided by a deep understanding of my own tendencies, cognition, and motivations, allowing me to navigate complex sales cycles with a level of composure that is rarely seen in high-stakes environments.</p>
-                        <p>What started as a college class project at Grand Valley State University became SafetySit—a medical device I took from initial concept through engineering, manufacturing, and FDA clearance. That experience taught me that real innovation isn't just about clever engineering; it's about listening to 250+ clinicians, understanding their daily struggles, and building something that genuinely improves their work.</p>
-                        <p>I am motivated by more than just meeting quotas; I am driven by a sense of duty and the pursuit of truth. Whether I am uncovering a $500M+ market opportunity or closing a record-breaking mid-market deal, I bring a unique blend of extraverted energy and introverted depth.</p>
+                        <p>I'm a Sales Engineer who doesn't just demo software — I build the technical case that closes the deal. My approach starts with deep discovery: understanding the customer's workflows, security requirements, and integration constraints before ever opening a slide deck. That's how I closed three of M-Files' largest North American mid-market deals, each exceeding $100K ARR.</p>
+                        <p>Before tech sales, I was building physical products. What started as a college class project became SafetySit — an FDA-cleared medical device I took from concept through engineering, manufacturing, and regulatory clearance. 250+ clinician interviews taught me that real solutions come from listening first and architecting second.</p>
+                        <p>I bring hands-on technical depth — Python, JavaScript, REST APIs, Azure, AI agents — combined with the ability to translate that into business value for IT, compliance, and executive stakeholders. Whether I'm building a proof-of-concept or automating a quoting workflow, I move fast and I make it count.</p>
                     </div>
                 </div>
             </div>
@@ -1333,14 +1493,14 @@
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/></svg>
                     </div>
                     <h3>Reflective Problem-Solving</h3>
-                    <p>My cognitive style favors deep reflection and internal processing. While I am highly effective in social settings, my best technical breakthroughs happen in my "sanctuary"—the quiet hours where I deconstruct complex problems to find the most elegant solution. This balance of extraverted energy and introverted depth is what sets my approach apart.</p>
+                    <p>My best technical work comes from deep focus — sitting with a customer's problem until the right solution surfaces. I balance fast POC builds with careful discovery, knowing when to demo quick and when to slow down and pressure-test assumptions with stakeholders.</p>
                 </div>
                 <div class="cognitive-card">
                     <div class="cognitive-icon">
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
                     </div>
-                    <h3>Abstract Visionary</h3>
-                    <p>I excel at seeing patterns that others miss. I don't just sell software; I sell a future-state vision where bold, imaginative ideas are translated into concrete, engineered achievements. My background includes deep experience in Azure architecture, security, and API troubleshooting—specifically turning unstructured data into automated, high-value flows.</p>
+                    <h3>Cross-Domain Vision</h3>
+                    <p>I connect dots across domains that others miss — pulling from hardware engineering, clinical workflows, AI, and enterprise IT to frame solutions that resonate with both technical and business audiences. This is how I turn complex platform capabilities into narratives that move deals forward.</p>
                 </div>
             </div>
         </div>
@@ -1360,10 +1520,10 @@
                         <h3>Lead Sales Engineer</h3>
                         <div class="timeline-company">M-Files • New York / Remote</div>
                         <ul>
-                            <li>Led sales engineering strategy across 3-5 team members, closing 3 of the largest NA mid-market deals (>$100K ARR) with 115% average quota attainment</li>
-                            <li>Designed solution architectures through award-winning demonstrations and proof-of-concepts during complex, multi-stakeholder sales cycles</li>
-                            <li>Earned global recognition while managing 30 parallel opportunities and strengthening stakeholder confidence</li>
-                            <li>Automated quoting workflows reducing rework by 30% and reclaiming 400+ productive hours annually</li>
+                            <li>Delivered $800K+ in closed ARR by leading technical evaluations that secured 3 of M-Files' largest NA mid-market deals (each >$100K ARR) with 115% average quota attainment</li>
+                            <li>Built tailored proof-of-concept evaluations mapping platform capabilities to customer workflows, resolving objections across IT, compliance, and executive audiences</li>
+                            <li>Architected cloud and hybrid deployments incorporating MFA, Active Directory, RESTful APIs, and metadata-driven workflows for regulated-industry customers</li>
+                            <li>Reclaimed 400+ productive hours annually by building a quoting automation system with stage-based routing and version control, reducing rework by 30%</li>
                         </ul>
                     </div>
                 </div>
@@ -1441,29 +1601,115 @@
             </div>
             <div class="highlights-grid">
                 <div class="highlight-card">
-                    <h3>Solution Architecture</h3>
-                    <p>Designing scalable technical solutions that align platform capabilities with customer workflows, security requirements, and integration constraints.</p>
-                </div>
-                <div class="highlight-card">
                     <h3>Technical Sales Leadership</h3>
-                    <p>Leading pre-sales teams through complex enterprise sales cycles with 115% average quota attainment. Certified in Sandler Sales, Winning by Design, and High Ticket Closing methodologies, bringing structured frameworks to technical selling.</p>
+                    <p>Leading pre-sales teams through complex enterprise sales cycles with $800K+ closed ARR and 115% average quota attainment. Converting deep technical knowledge into business narratives that increase deal velocity and win rates.</p>
                 </div>
                 <div class="highlight-card">
-                    <h3>Emotional Intelligence</h3>
-                    <p>Reading rooms and navigating complex interpersonal dynamics with calm composure. High EQ allows me to manage stakeholders, defuse tension, and guide conversations toward alignment—even in high-stakes environments where emotions run high.</p>
+                    <h3>Proof-of-Concept Development</h3>
+                    <p>Building tailored POC evaluations that map platform capabilities to customer workflows — resolving objections and de-risking purchasing decisions across IT, compliance, and executive audiences.</p>
                 </div>
                 <div class="highlight-card">
-                    <h3>Azure & Enterprise Integration</h3>
-                    <p>Deep experience in Azure architecture, security, and API troubleshooting—turning unstructured data into automated, high-value flows with identity management and metadata-driven workflows.</p>
+                    <h3>Technical Discovery</h3>
+                    <p>Conducting deep discovery across 250+ stakeholder engagements to uncover true needs. Mapping business workflows, validating integration requirements, and ensuring solution fit before deployment to prevent costly misalignments.</p>
                 </div>
                 <div class="highlight-card">
-                    <h3>Medical Device Development</h3>
-                    <p>Navigating FDA regulatory pathways, building quality management systems, and coordinating manufacturing readiness for Class II devices from concept to commercialization.</p>
+                    <h3>Cloud & API Integration</h3>
+                    <p>Hands-on experience architecting cloud and hybrid deployments with Azure, AWS, and GCP — incorporating REST APIs, OAuth, Active Directory, and metadata-driven workflows for regulated-industry customers.</p>
                 </div>
                 <div class="highlight-card">
-                    <h3>Discovery & Requirements</h3>
-                    <p>Conducting 250+ stakeholder discovery interviews to uncover true needs and translate requirements into actionable solution designs. At M-Files, led technical discovery and verification processes—mapping business workflows, validating integration requirements, and ensuring solution fit before deployment to prevent costly misalignments.</p>
+                    <h3>AI & Workflow Automation</h3>
+                    <p>Building automation systems that eliminate operational waste — from AI agents and LLM-powered workflows to quoting systems that reclaim 400+ hours annually. Python, JavaScript, N8N, and MCP.</p>
                 </div>
+                <div class="highlight-card">
+                    <h3>Medical Device Commercialization</h3>
+                    <p>FDA-cleared device founder who took a product from concept to market solo — 510(k) submissions, QMS development, manufacturing readiness, and clinical validation across five hospital systems.</p>
+                </div>
+                <div class="highlight-card">
+                    <h3>Hardware Design & Plastics</h3>
+                    <p>Deep expertise in product design with a specialty in advanced engineering plastics. Led Toyota's industry-first plastic seatback architecture, reducing lift force by 64%. SolidWorks, DFM, FEA, and injection molding design.</p>
+                </div>
+                <div class="highlight-card">
+                    <h3>AI Automations</h3>
+                    <p>Designing and deploying AI-driven automation systems — from intelligent agents and LLM-powered workflows to voice AI and retrieval-augmented pipelines. N8N, MCP, Python, and prompt engineering at scale.</p>
+                </div>
+                <div class="highlight-card">
+                    <h3>Manufacturing</h3>
+                    <p>Hands-on manufacturing expertise across automotive, medical, and food production. Lean workflow redesign, preventive maintenance programs, supplier coordination, and end-to-end launch readiness from prototype tooling to production.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="projects-section" id="projects">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-number">06</span>
+                <h2>Projects</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <span class="project-tag">Freelance</span>
+                    <h3>Upwork Profile</h3>
+                    <p>Top-rated freelancer at $150/hr with 30+ production-ready deliverables across medical, dental, automotive, and government sectors. Product design, manufacturing consulting, and technical solutions.</p>
+                    <a href="https://www.upwork.com/freelancers/~017d14cd1dffdbd4c3?s=1737190722364944385" target="_blank" class="project-link">
+                        View Profile
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                    </a>
+                </div>
+                <div class="project-card">
+                    <span class="project-tag">AI / Voice</span>
+                    <h3>InnerChild.chat</h3>
+                    <p>A therapeutic AI platform that lets users have compassionate voice conversations with a simulation of their younger self. Complete with personality assessments, custom voice cloning, and guided sessions to reshape difficult memories and practice self-compassion.</p>
+                    <a href="https://innerchild.chat" target="_blank" class="project-link">
+                        Visit Project
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                    </a>
+                </div>
+                <div class="project-card">
+                    <span class="project-tag">3D / WebGL</span>
+                    <h3>Consciousness Layers</h3>
+                    <p>An interactive 3D visualization exploring layers of consciousness through a dynamic sphere interface. Built with Three.js and WebGL — a real-time, browser-based experience that pushes the boundaries of what's possible in the browser.</p>
+                    <a href="https://www.consciousnesslayers.com" target="_blank" class="project-link">
+                        Visit Project
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                    </a>
+                </div>
+                <div class="project-card">
+                    <span class="project-tag">Personal</span>
+                    <h3>Side Hobbies</h3>
+                    <p>A collection of personal projects, explorations, and things I build for fun outside of work — from creative experiments to tools that scratch my own itch.</p>
+                    <a href="https://west-manuscript-4b4.notion.site/" target="_blank" class="project-link">
+                        Check It Out
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="hire-section">
+        <div class="container">
+            <div class="hire-content">
+                <h3>Available for <em>hire</em></h3>
+                <p>I take on contract work — both hourly engagements and project-based builds.</p>
+                <div class="hire-rate">$150</div>
+                <div class="hire-rate-label">per hour / contract</div>
+                <div class="hire-options">
+                    <div class="hire-option">
+                        <div class="hire-option-title">Hourly</div>
+                        <div class="hire-option-desc">Flexible, ongoing engagements</div>
+                    </div>
+                    <div class="hire-option">
+                        <div class="hire-option-title">Project-Based</div>
+                        <div class="hire-option-desc">Scoped deliverables, fixed price</div>
+                    </div>
+                </div>
+                <p class="hire-note">Startup-friendly — rates negotiable for early-stage companies.</p>
+                <a href="Mark-Harburg-Resume.pdf" target="_blank" class="btn-primary" style="margin-top: 40px; display: inline-flex; border-color: var(--gold); background: transparent; color: var(--gold);">
+                    Download Resume
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                </a>
             </div>
         </div>
     </section>
@@ -1471,16 +1717,16 @@
     <section class="story-section" id="story">
         <div class="container">
             <div class="section-header">
-                <span class="section-number">06</span>
+                <span class="section-number">07</span>
                 <h2>My Story</h2>
                 <div class="section-line"></div>
             </div>
             <div class="story-content">
                 <div class="story-text">
                     <h3>From classroom project to <em>FDA-cleared</em> medical device</h3>
-                    <p>My career started in engineering, learning how ideas become real under real constraints—on factory floors, in clinics, and alongside the people doing the work.</p>
-                    <p>While studying at Grand Valley State University, a class project introduced me to a problem physical therapists faced every day. What followed were hundreds of conversations, early prototypes, and years of iteration that led to SafetySit, a lightweight, portable medical device designed to better support patients during therapy and ultimately cleared by the FDA.</p>
-                    <p>That experience shaped how I approach everything I build. Real innovation doesn't start with assumptions or features—it starts with listening, translating complexity, and designing solutions that fit the real world.</p>
+                    <p>My career started in engineering — on factory floors, in clinics, and alongside the people doing the work. A class project at Grand Valley State became SafetySit, a medical device I took from concept through FDA clearance solo.</p>
+                    <p>250+ clinician interviews taught me that real solutions come from listening first. That discovery-driven approach carried directly into sales engineering, where understanding the customer's world is the difference between a demo and a closed deal.</p>
+                    <p>Now I bring that same intensity to enterprise SaaS — building POCs, architecting cloud integrations, automating workflows, and translating technical complexity into business value that moves stakeholders to action.</p>
                 </div>
                 <div class="story-visual">
                     <div class="story-card">
@@ -1505,18 +1751,18 @@
     <section class="contact" id="contact">
         <div class="container">
             <div class="section-header">
-                <span class="section-number">07</span>
+                <span class="section-number">08</span>
                 <h2>Contact</h2>
                 <div class="section-line"></div>
             </div>
             <div class="contact-content">
                 <div class="contact-text">
                     <h3>Let's build something <em>meaningful</em> together</h3>
-                    <p>Whether you're navigating a complex technical decision, building a sales engineering team, or bringing a product to market, I'd love to hear about your challenges.</p>
+                    <p>Whether you're building a pre-sales team, navigating a complex technical sale, or need an SE who can close — I'd love to hear about your challenges.</p>
                     <div class="contact-details">
-                        <a href="/cdn-cgi/l/email-protection#84e9e5f6eff3ece5f6e6f1f6e3c4e3e9e5ede8aae7ebe9" class="contact-item">
+                        <a href="mailto:harburgmark@gmail.com" class="contact-item">
                             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-                            <span class="__cf_email__" data-cfemail="701d11021b071811021205021730171d11191c5e131f1d">[email&#160;protected]</span>
+                            harburgmark@gmail.com
                         </a>
                         <a href="tel:734-929-8052" class="contact-item">
                             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
